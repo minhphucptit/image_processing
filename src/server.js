@@ -15,7 +15,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util.js';
 
   // Root URI call
   app.get( "/", ( req, res ) => {
-    res.status(200).send("Welcome to the Cloud!");
+    res.status(200).send("try GET /filteredimage?image_url={{}}");
   } );
 
   app.get( "/filteredimage", async ( req, res ) => {
